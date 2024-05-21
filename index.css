@@ -1,0 +1,1104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --mainColor: #080C20;
+    --paragraphTextColor: #777F98;
+    --featureCardColor: #093F68;
+    --premiumCardColor: #3EE9E5;
+}
+
+.heroExteriorImage {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--mainColor);
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* Navigation */
+    nav {
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        width: 100%;
+
+        padding-left: 7.5%;
+    }
+
+    nav > img {
+        width: 10rem;
+        cursor: pointer;
+    }
+
+    /* Hero */
+    #heroSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        text-align: center;
+
+        height: 40vh;
+
+        margin-top: 6.33rem;
+    }
+
+    #heroSection > div {
+        width: 30%;
+    }
+
+    /* Hero Text */
+    #heroSection > div > h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.3rem;
+
+        font-weight: 500;
+
+        letter-spacing: 0.2rem;
+    }
+
+    #heroSection > div > h1 > span {
+        color: #3EE9E5;
+        font-size: 2.6rem;
+    }
+
+    #heroSection > div > p {
+        color: var(--paragraphTextColor);
+        font-size: 0.83rem;
+        margin-bottom: 3.5rem;
+        letter-spacing: 0.06rem;
+    }
+
+    /* Hero Images */
+    .heroInteriorImage {
+        position: absolute;
+        width: 30%;
+        z-index: -1;
+    }
+
+    /* Features Section */
+    #featuresSection {
+        display: flex;
+        flex-direction: row;
+
+        align-items: space-around;
+        justify-content: center;
+
+        width: 90%;
+        height: 21.2777777778rem;
+        margin: 0 auto;
+
+        margin-top: 11.2rem;
+
+        position: relative;
+        padding-left: 7.5%;
+    }
+
+    .featuresFeatureCard:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    .featuresFeatureCard {
+        width: 14.16rem;
+        margin-right: 5%;
+
+        height: 18.6rem;
+    }
+
+    .featuresFeatureCardImageContainer {
+        width: 8.888rem;
+        height: 9.1111rem;
+        background: var(--featureCardColor);
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featuresFeatureCardImage:nth-child(1) {
+        width: 4.88rem;
+    }
+
+    .featuresFeatureCardImage:nth-child(2) {
+        width: 4.11rem;
+    }
+
+    .featuresFeatureCardImage:nth-child(3) {
+        width: 4.44rem;
+    }
+
+    .featuresFeatureCardImage:nth-child(4) {
+        width: 5.77rem;
+    }
+
+    .featuresFeatureCard > h3 {
+        font-size: 1rem;
+
+        margin-top: 2.66rem;
+
+        margin-bottom: 1.27rem;
+    }
+
+    .featuresFeatureCard > p {
+        font-size: 0.83rem;
+        color: var(--paragraphTextColor);
+    }
+
+    /* Pricing Plans */
+    #pricingPlansSection {
+        display: flex;
+        flex-direction: column;
+
+        height: 39.166rem;
+
+        align-items: center;
+
+        justify-content: space-around;
+
+        margin-top: 11.22rem;
+    }
+
+    #pricingPlansSection > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30rem;
+        text-align: center;
+    }
+
+    #pricingPlansSection > div > h2 {
+        font-size: 1.77rem;
+    }
+
+    #pricingPlansSection > div > p {
+        font-size: 0.83rem;
+        color: var(--paragraphTextColor);
+    }
+
+    #pricingPlanCards {
+        display: flex;
+        flex-direction: row;
+
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0 14.44rem;
+
+        width: 51.11rem;
+    }
+
+    #pricingPlanCards > div {
+        width: 24.722rem;
+
+        border-radius: 0.44rem;
+    }
+
+    #pricingPlanCardsFree {
+        background: var(--featureCardColor);
+
+        height: 23.611rem;
+    }
+
+    #pricingPlanCardsFree > h3 {
+        margin-top: 2.72rem;
+        margin-left: 2.11rem;
+    }
+
+    #pricingPlanCardsFree > p {
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        font-size: 0.83rem;
+        color: #FFFFFF;
+        opacity: 0.5973;
+    }
+
+    #pricingPlanCardsFree > h2 {
+        margin-top: 1.388rem;
+        margin-left: 2.11rem;
+
+        font-size: 2.22rem;
+    }
+
+    #pricingPlanCardsFree > div {
+        margin-top: 1.388rem;
+        margin-left: 2.0733rem;
+    }
+
+    #pricingPlanCardsFree > div > ul {
+        list-style-type: none;
+
+        position: relative;
+    }
+
+    #pricingPlanCardsFree > div > ul > li::before {
+        content: url("../maker-pre-launch-landing-page/starter-code/assets/icon-check.svg");
+        position: absolute;
+        left: -3rem;
+    }
+
+    #pricingPlanCardsFree > div > ul::marker {
+        color: var(--premiumCardColor);
+    }
+
+    #pricingPlanCardsPremium {
+        background: var(--premiumCardColor);
+
+        height: 24.944rem;
+    }
+
+    #pricingPlanCardsFree:nth-child(1) > img {
+        position: absolute;
+
+        height: 2.55rem;
+
+        margin-top: -1.277rem;
+
+        margin-left: 2.11rem;
+    }
+
+    #pricingPlanCardsFree:nth-child(2) > img {
+        position: absolute;
+
+        height: 2.83rem;
+
+        margin-top: -1.416rem;
+        margin-left: 2.055rem;
+    }
+
+    /* Premium Card */
+    #pricingPlanCardsPremium {
+        color: var(--mainColor);
+        height: 24.944rem;
+    }
+
+    #pricingPlanCardsPremium > img {
+        height: 3.611rem;
+        margin-left: 2.055rem;
+        margin-top: -1.805rem;
+        position: absolute;
+    }
+
+    #pricingPlanCardsPremium > h3 {
+        font-weight: 800;
+        margin-top: 3.38rem;
+        margin-left: 2.11rem;
+    }
+
+    #pricingPlanCardsPremium > p {
+        font-size: 0.83rem;
+        font-weight: 400;
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        color: var(--mainColor);
+
+        opacity: 0.6;
+    }
+
+    #pricingPlanCardsPremium > h2 {
+        font-size: 2.22rem;
+        font-weight: 800;
+        margin-top: 1.388rem;
+        margin-left: 2.11rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #pricingPlanCardsPremium > h2 > span {
+        font-size: 0.833rem;
+        font-weight: 400;
+
+        opacity: 0.6;
+
+        margin-left: 0.4166rem;
+    }
+
+    #pricingPlanCardsPremium > ul {
+        list-style-image: url('../maker-pre-launch-landing-page/starter-code/assets/icon-check.svg');
+        margin-top: 1.055rem;
+        margin-left: 3.4rem;
+    }
+
+    #pricingPlanCardsPremium > ul > li {
+        margin-top: 0.666rem;
+
+        font-size: 0.833rem;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 10.833rem;
+
+        margin-top: 8.3888rem;
+
+        position: relative;
+    }
+
+    footer > h2 {
+        font-size: 1.77rem;
+        margin-bottom: 2.33rem;
+    }
+
+    footer > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+
+footer > div > div > input:focus {
+    border: 2px solid var(--premiumCardColor);
+    outline: none;
+}
+
+footer > div > div > input {
+    width: 17.77rem;
+    height: 2.66rem;
+
+    border-radius: 1.33rem;
+
+    background: var(--featureCardColor);
+    border: none;
+
+    margin-right: 0.88rem;
+
+    font-size: 0.833rem;
+    color: #FFFFFF;
+    font-weight: bold;
+
+    padding-left: 1rem;
+
+    position: relative;
+}
+
+footer > div > button {
+    width: 7.777rem;
+    height: 2.66rem;
+
+    font-size: 0.833rem;
+
+    border-radius: 1.33rem;
+
+    background: var(--premiumCardColor);
+    border: none;
+
+    color: var(--featureCardColor);
+
+    font-weight: 600;
+
+    transition: 400ms ease all;
+    cursor: pointer;
+}
+
+footer > div > button:hover {
+    background: none;
+    border: 3px solid var(--premiumCardColor);
+    color: white;
+}
+
+footer > img {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 16.5rem;
+
+    z-index: -1;
+}
+
+/* States */
+.inputFieldError {
+    border: 2px solid #FF2965;
+}
+
+footer > div > div > p {
+    position: absolute;
+    color: #FF2965;
+    font-size: 0.666rem;
+    margin-top: 0.222rem;
+    margin-left: 1rem;
+}
+
+#emailSuccessText {
+    color: var(--premiumCardColor);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mobile Customization */
+@media screen and (max-width: 1023px) and (min-width: 600px) {
+    nav {
+        margin-top: 2.666rem;
+        margin-left: 2.166rem;
+    }
+
+    #heroSection {
+        margin-top: 4.277rem;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 6.0555rem;
+    }
+
+    #heroSection > div {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #heroSection > div > h1 {
+        font-size: 1.77rem;
+        margin-bottom: 1.333rem;
+        width: 20.3888rem;
+        margin: 0 auto;
+    }
+
+    #heroSection > div > h1 > span {
+        color: var(--premiumCardColor);
+        font-size: 1.77rem;
+    }
+
+    #heroSection > div > p {
+        width: 25.3888rem;
+        color: var(--paragraphTextColor);
+        margin: 0 auto;
+        font-size: 0.833rem;
+        margin-top: 1.33rem;
+        margin-bottom: 1.77rem;
+    }
+
+    #heroScrollImage {
+        margin: 0 auto;
+        width: 1.44rem;
+    }
+
+    .heroInteriorImage {
+        position: absolute;
+
+        align-self: center;
+
+        width: 21.444rem;
+
+        z-index: -1;
+    }
+
+    /* Features Section */
+
+    #featuresSection {
+        margin-top: 6.0555rem;
+        width: 31rem;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 7.833rem;
+    }
+
+    .featuresFeatureCard {
+        display: flex;
+        flex-direction: row;
+        width: 28.611rem;
+
+        margin-bottom: 2.22rem;
+    }
+
+    .featuresFeatureCard:nth-child(odd) {
+        align-self: flex-end;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(1) > img {
+        width: 3.666rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(2) > img {
+        width: 3.11rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(3) > img {
+        width: 3.333rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(4) > img {
+        width: 4.33rem;
+    }
+
+    .featuresFeatureCardImageContainer {
+        width: 6.66rem;
+        height: 6.88rem;
+        background: var(--featureCardColor);
+        border-radius: 2.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 3.055rem;
+    }
+
+    .featuresFeatureCardText {
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresFeatureCardText > h3 {
+        font-size: 1rem;
+    }
+
+    .featuresFeatureCardText > p {
+        font-size: 0.833rem;
+        color: var(--paragraphTextColor);
+        margin-top: 0.611rem;
+    }
+
+    /* Pricing Plans */
+    #pricingPlansSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pricingPlansSection > div:nth-child(1) {
+        width: 31.833rem;
+        text-align: center;
+    }
+
+    #pricingPlansSection > div:nth-child(1) > h2{
+        font-size: 1.333rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #pricingPlansSection > div:nth-child(1) > p {
+        font-size: 0.833rem;
+        color: var(--paragraphTextColor);
+        margin-bottom: 2.5rem;
+    }
+
+    /* Free Card */
+    #pricingPlanCardsFree {
+        background: var(--featureCardColor);
+
+        width: 24.7222rem;
+        height: 23.6111rem;
+        border-radius: 0.444rem;
+
+        margin: 0 auto;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3.111rem;
+    }
+
+    #pricingPlanCardsFree > img {
+        width: 2.55rem;
+        margin-top: -1.27rem;
+        margin-left: 2.111rem;
+        position: absolute;
+    }
+
+    #pricingPlanCardsFree > h3 {
+        margin-top: 2.72rem;
+        margin-left: 2.11rem;
+        font-size: 1rem;
+    }
+
+    #pricingPlanCardsFree > p {
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        font-size: 0.833rem;
+        color: #FFFFFF;
+        opacity: 0.5973;
+    }
+
+    #pricingPlanCardsFree > h2 {
+        margin-top: 1.33rem;
+        margin-left: 2.11rem;
+        font-size: 2.22rem;
+    }
+
+    #pricingPlanCardsFree > div {
+        margin-top: 1.055rem;
+        margin-left: 3.0733rem;
+    }
+
+    #pricingPlanCardsFree > div > ul {
+        list-style-image: url('./assets/icon-check-green.svg');
+        position: relative;
+    }
+
+    #pricingPlanCardsFree > div > ul > li {
+        margin-top: 0.666rem;
+        font-size: 0.833rem;
+        padding-left: 0.8511rem;
+    }
+
+    /* Premium Card */
+    #pricingPlanCardsPremium {
+        background: var(--premiumCardColor);
+
+        width: 24.7222rem;
+        height: 24.9444rem;
+        border-radius: 0.444rem;
+
+        margin: 0 auto;
+
+        margin-top: 3.611rem;
+
+        color: black;
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pricingPlanCardsPremium > img {
+        width: 2.833rem;
+        margin-left: 2.055rem;
+        margin-top: -1.411rem;
+        position: absolute;
+    }
+
+    #pricingPlanCardsPremium > h3 {
+        font-size: 1rem;
+        margin-left: 2.111rem;
+        margin-top: 3.3888rem;
+    }
+
+    #pricingPlanCardsPremium > p {
+        font-size: 0.833rem;
+        font-weight: 400;
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        color: var(--mainColor);
+
+        opacity: 0.6;
+    }
+
+    #pricingPlanCardsPremium > h2 {
+        font-size: 2.22rem;
+        font-weight: 800;
+        margin-top: 1.33rem;
+        margin-left: 2.11rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #pricingPlanCardsPremium > h2 > span {
+        font-size: 0.833rem;
+        font-weight: 400;
+
+        opacity: 0.6;
+
+        margin-left: 0.4166rem;
+    }
+
+    #pricingPlanCardsPremium > ul {
+        list-style-image: url('./assets/icon-check-blue.svg');
+        margin-top: 1.055rem;
+        margin-left: 3.4rem;
+    }
+
+    #pricingPlanCardsPremium > ul > li {
+        margin-top: 0.666rem;
+        font-size: 0.833rem;
+
+        padding-left: 0.8511rem;
+    }
+
+    footer {
+        margin-top: 6.61rem;
+        margin-bottom: 5.833rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.611rem;
+    }
+
+    footer > h2 {
+        font-size: 1.333rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heroInteriorImage {
+        display: none;
+    }
+
+    nav {
+        margin-top: 2.222rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heroSection {
+        margin-top: 2.555rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #heroSection > div:nth-child(2) {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #heroSection > div:nth-child(2) > h1 {
+        font-size: 1.77rem;
+        margin-bottom: 1.055rem;
+        align-self: center;
+    }
+
+    #heroSection > div:nth-child(2) > h1 > span {
+        color: var(--premiumCardColor);
+        font-size: 1.77rem;
+    }
+
+    #heroSection > div:nth-child(2) > p {
+        color: var(--paragraphTextColor);
+        margin: 0 auto;
+        font-size: 0.833rem;
+        margin-top: 1.33rem;
+        margin-bottom: 1.77rem;
+    }
+
+    #heroScrollImage {
+        margin: 0 auto;
+        width: 1.44rem;
+    }
+
+    #featuresSection {
+        margin-top: 8rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featuresFeatureCard {
+        width: 18.166rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 3.11rem;
+    }
+
+    .featuresFeatureCardImageContainer {
+        width: 6.66rem;
+        height: 6.88rem;
+        background: var(--featureCardColor);
+        border-radius: 2.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 1.055rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(1) > img {
+        width: 3.66rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(2) > img {
+        width: 3.11rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(3) > img {
+        width: 3.33rem;
+    }
+
+    .featuresFeatureCardImageContainer:nth-child(4) > img {
+        width: 4.33rem;
+    }
+
+    .featuresFeatureCardText {
+        width: 18.166rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresFeatureCardText > h3 {
+        font-size: 1rem;
+    }
+
+    .featuresFeatureCardText > p {
+        font-size: 0.833rem;
+        color: var(--paragraphTextColor);
+        margin-top: 0.611rem;
+    }
+
+    #pricingPlansSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 8rem;
+    }
+
+    #pricingPlansSection > div:nth-child(1) {
+        width: 18.166rem;
+        text-align: center;
+    }
+
+    #pricingPlansSection > div:nth-child(1) > h2{
+        font-size: 1.333rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #pricingPlansSection > div:nth-child(1) > p {
+        font-size: 0.833rem;
+        color: var(--paragraphTextColor);
+        margin-bottom: 2.5rem;
+    }
+
+    #pricingPlanCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pricingPlanCardsFree {
+        background: var(--featureCardColor);
+
+        width: 18.166rem;
+        height: 23.6111rem;
+        border-radius: 0.444rem;
+
+        margin: 0 auto;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3.111rem;
+    }
+
+    #pricingPlanCardsFree > img {
+        width: 2.55rem;
+        margin-top: -1.27rem;
+        margin-left: 2.111rem;
+        position: absolute;
+    }
+
+    #pricingPlanCardsFree > h3 {
+        margin-top: 2.72rem;
+        margin-left: 2.11rem;
+        font-size: 1rem;
+    }
+
+    #pricingPlanCardsFree > p {
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        font-size: 0.833rem;
+        color: #FFFFFF;
+        opacity: 0.5973;
+    }
+
+    #pricingPlanCardsFree > h2 {
+        margin-top: 1.33rem;
+        margin-left: 2.11rem;
+        font-size: 2.22rem;
+    }
+
+    #pricingPlanCardsFree > div {
+        margin-top: 1.055rem;
+        margin-left: 3.0733rem;
+    }
+
+    #pricingPlanCardsFree > div > ul {
+        list-style-image: url('./assets/icon-check-green.svg');
+        position: relative;
+    }
+
+    #pricingPlanCardsFree > div > ul > li {
+        margin-top: 0.666rem;
+        font-size: 0.833rem;
+        padding-left: 0.8511rem;
+    }
+
+    #pricingPlanCardsPremium {
+        background: var(--premiumCardColor);
+
+        width: 18.166rem;
+        height: 24.9444rem;
+        border-radius: 0.444rem;
+
+        margin: 0 auto;
+
+        margin-top: 3.611rem;
+
+        color: black;
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pricingPlanCardsPremium > img {
+        width: 2.833rem;
+        margin-left: 2.055rem;
+        margin-top: -1.411rem;
+        position: absolute;
+    }
+
+    #pricingPlanCardsPremium > h3 {
+        font-size: 1rem;
+        margin-left: 2.111rem;
+        margin-top: 3.3888rem;
+    }
+
+    #pricingPlanCardsPremium > p {
+        font-size: 0.833rem;
+        font-weight: 400;
+        margin-top: 1.055rem;
+        margin-left: 2.11rem;
+        margin-right: 2.11rem;
+
+        color: var(--mainColor);
+
+        opacity: 0.6;
+    }
+
+    #pricingPlanCardsPremium > h2 {
+        font-size: 2.22rem;
+        font-weight: 800;
+        margin-top: 1.33rem;
+        margin-left: 2.11rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #pricingPlanCardsPremium > h2 > span {
+        font-size: 0.833rem;
+        font-weight: 400;
+
+        opacity: 0.6;
+
+        margin-left: 0.4166rem;
+    }
+
+    #pricingPlanCardsPremium > ul {
+        list-style-image: url('./assets/icon-check-blue.svg');
+        margin-top: 1.055rem;
+        margin-left: 3.4rem;
+    }
+
+    #pricingPlanCardsPremium > ul > li {
+        margin-top: 0.666rem;
+        font-size: 0.833rem;
+
+        padding-left: 0.8511rem;
+    }
+
+    footer {
+        margin-top: 6.61rem;
+        margin-bottom: 5.833rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.611rem;
+    }
+
+    footer > h2 {
+        font-size: 1.333rem;
+    }
+
+    footer > div > button {
+        width: 17.77rem;
+        height: 2.66rem;
+
+        font-size: 0.833rem;
+
+        border-radius: 1.33rem;
+
+        background: var(--premiumCardColor);
+
+        color: var(--featureCardColor);
+
+        margin-top: 1.055rem;
+
+        align-self: center;
+    }
+
+    footer > div > div > input {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    footer > img {
+        display: none;
+    }
+}

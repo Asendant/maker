@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maker Pre-Launch</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav> <!-- Navigation Bar -->
+        <img src="./assets/logo.svg" alt="Maker">
+    </nav>
+    <section id="heroSection"> <!-- Hero Section -->
+        <div>
+            <img src="./assets/illustration-hero-left.svg" alt="Left Image" class="heroExteriorImage" id="heroExteriorLeft">
+            <img src="./assets/illustration-hero-right.svg" alt="Right Image" class="heroExteriorImage" id="heroExteriorRight">
+        </div>
+        
+        <div> <!-- Hero Text -->
+            <h1>Get Paid for the work you <span>love</span> to do</h1>
+            <p>The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re looking to escape the rat race or set up a side hustle, we’ve got you covered.</p>
+        </div>
+        <img src="./assets/icon-scroll.svg" id="heroScrollImage">
+        
+        <!-- Exterior Images -->
+
+        <!-- Interior Squiggle -->
+        <img src="./assets/bg-hero-squiggle.svg" alt="Interior Image" class="heroInteriorImage">
+    </section>
+    <section id="featuresSection"> <!-- Features Section -->
+        <div class="featuresFeatureCard"> <!-- Feature Card -->
+            <div class="featuresFeatureCardImageContainer">
+                <img src="./assets/illustration-passions.svg" alt="Passions" class="featuresFeatureCardImage">
+            </div>
+            <div class="featuresFeatureCardText">
+                <h3>Indulge your passions</h3>
+                <p>Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
+            </div>
+        </div>
+        <div class="featuresFeatureCard"> <!-- Feature Card -->
+            <div class="featuresFeatureCardImageContainer">
+                <img src="./assets/illustration-financial-freedom.svg" alt="Financial Freedom" class="featuresFeatureCardImage">
+            </div>
+            <div class="featuresFeatureCardText">
+                <h3>Gain financial freedom</h3>
+                <p>Start making money work for you. There’s nothing quite like earning while you sleep. </p>
+            </div>
+        </div>
+        <div class="featuresFeatureCard"> <!-- Feature Card -->
+            <div class="featuresFeatureCardImageContainer">
+                <img src="./assets/illustration-lifestyle.svg" alt="Lifestyle" class="featuresFeatureCardImage">
+            </div>
+            <div class="featuresFeatureCardText">
+                <h3>Choose your lifestyle</h3>
+                <p>Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
+            </div>
+            </div>
+        <div class="featuresFeatureCard"> <!-- Feature Card -->
+            <div class="featuresFeatureCardImageContainer">
+                <img src="./assets/illustration-work-anywhere.svg" alt="" class="featuresFeatureCardImage">
+            </div>
+            <div class="featuresFeatureCardText">
+                <h3>Work from anywhere</h3>
+                <p>Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
+            </div>
+        </div>
+    </section>
+    <section id="pricingPlansSection"> <!-- Pricing Plans -->
+        <div> <!-- Text Div -->
+            <h2>Our Pricing Plans</h2>
+            <p>We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.</p>
+        </div>
+        <div id="pricingPlanCards"> <!-- Pricing Cards -->
+            <div id="pricingPlanCardsFree"> <!-- Free Card -->
+                <img src="./assets/icon-free.svg" alt="Free Plan">
+                <h3>Dip your toe</h3>
+                <p>Just getting started? No problem at all! Our free plan will take you a long way.</p>
+                <h2>Free</h2>
+                <div>
+                    <ul>
+                        <li>Unlimited products</li>
+                        <li>Basic analytics</li>
+                        <li>Limited marketplace exposure</li>
+                        <li>10% fee per transaction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="pricingPlanCardsPremium"> <!-- Premium Card -->
+                <img src="./assets/icon-paid.svg" alt="Paid Plan">
+                <h3>Dive right in</h3>
+                <p>Ready for the big time? Our paid plan will help you take your business to the next level.</p>
+                <h2>$25.00 <span>/ month</span></h2>
+                <ul>
+                    <li>Custom Domain</li>
+                    <li>Advanced analytics and reports</li>
+                    <li>High marketplace visibility</li>
+                    <li>5% fee per transaction</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Get notified when we launch</h2>
+        <div>
+            <div>
+                <input type="text" placeholder="Email address" class="" id="emailAddressInputField"/>
+                <p class="hidden" id="invalidFormatText">Oops! That doesn't look like an email address</p>
+                <p class="hidden" id="emailSuccessText">Successfuly signed up!</p>
+            </div>
+            <button type="submit" id="emailSubmitButton">Get notified</button>
+        </div>
+        <img src="./assets/bg-footer-squiggle.svg" alt="">
+    </footer>
+</body>
+</html>
